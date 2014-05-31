@@ -2,7 +2,7 @@
     "use strict";
 
     var bindToClass      = 'carousel',
-		containerWidth   = 0,
+        containerWidth   = 0,
         scrollWidth      = 0,
         posFromLeft      = 0,    // Stripe position from the left of the screen
         stripePos        = 0,    // When relative mouse position inside the thumbs stripe
@@ -19,7 +19,6 @@
         containerWidth       = el.clientWidth;
         scrollWidth          = el.scrollWidth; // the "<ul>"" width
         padding              = 0.22 * containerWidth; // padding in percentage of the area which the mouse movement affects
-
         posFromLeft          = $el.offset().left;
         stripePos            = e.pageX - padding - posFromLeft;
         pos                  = stripePos / (containerWidth - padding*2);
@@ -61,9 +60,9 @@
     }
 
     $.fn.carousel = function(options){
-		$(document)
-			.on('mouseenter.carousel', '.' + bindToClass, calc)
-			.on('mousemove.carousel', '.' + bindToClass, move);
+        $(document)
+            .on('mouseenter.carousel', '.' + bindToClass, calc)
+            .on('mousemove.carousel', '.' + bindToClass, move);
     };
 
     // automatic binding to all elements which have the class that is assigned to "bindToClass"
