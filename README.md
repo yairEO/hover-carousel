@@ -5,5 +5,4 @@ This super lightweight carousel which only moves left and right in relation to t
 
 
 ## How to use:
-    $(document).on('doubleTap', '.someItem', function(){ console.log('double tap'); })
-               .on('tap', '.someItem', function(){ console.log('single tap'); })
+	just give your carousel element a class "carousel". (the class name is configurable in the code obviously)
