@@ -9,22 +9,22 @@
         animated         = null,
         el, $el, ratio, scrollPos, nextMore, prevMore, pos, padding;
 
-    // calculate the thumbs container width, if the window has been resized
+    // calculate the thumbs container width
     function calc(e){
-        el  = this;
-        $el = $(el);
+        $el = $(this).find(' > .wrap');
+        el  = $el[0];
 
         nextMore = prevMore  = false; // reset
 
         containerWidth       = el.clientWidth;
         scrollWidth          = el.scrollWidth; // the "<ul>"" width
-        padding              = 0.22 * containerWidth; // padding in percentage of the area which the mouse movement affects
+        padding              = 0.2 * containerWidth; // padding in percentage of the area which the mouse movement affects
         posFromLeft          = $el.offset().left;
         stripePos            = e.pageX - padding - posFromLeft;
         pos                  = stripePos / (containerWidth - padding*2);
         scrollPos            = (scrollWidth - containerWidth ) * pos;
 
-        $el.animate({scrollLeft:scrollPos}, 200, 'easeInOutCirc');
+        $el.animate({scrollLeft:scrollPos}, 200, 'swing');
 
         clearTimeout(animated);
         animated = setTimeout(function(){
