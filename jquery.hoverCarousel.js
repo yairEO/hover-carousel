@@ -61,21 +61,12 @@
     }
 
     $.fn.carousel = function(options){
-        if( $.support.mouse ){
-            $(document)
-                .on('mouseenter.carousel', '.' + bindToClass, calc)
-                .on('mousemove.carousel', '.' + bindToClass, move);
-
-        }
-        /*
-        // Enable scrolling gesture on mobile
-        if( $.support.touch && !$.support.mouse ){
-            $(this).css('overflow', 'auto');
-        }
-        */
+		$(document)
+			.on('mouseenter.carousel', '.' + bindToClass, calc)
+			.on('mousemove.carousel', '.' + bindToClass, move);
     };
 
-    // Activate it generally for all items with the "carousel" class
+    // automatic binding to all elements which have the class that is assigned to "bindToClass"
     $.fn.carousel();
 
 })(jQuery);
