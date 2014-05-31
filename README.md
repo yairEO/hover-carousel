@@ -5,4 +5,4 @@ This super lightweight carousel which only moves left and right in relation to t
 
 
 ## How to use:
-	just give your carousel element a class "carousel". (the class name is configurable in the code obviously)
+just give your carousel element a class "carousel". (the class name is configurable in the code obviously)
