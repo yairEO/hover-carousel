@@ -1,9 +1,17 @@
 Hover Carousel
 ========
 
-This super lightweight carousel which only moves left and right in relation to the mouse position inside it's area.
+This super lightweight carousel-hover component which shows a nice scrollbar and side-fade indicators if more content is hidden "after" the side fold
 
-###[View Demo Page](http://codepen.io/vsync/pen/KGzdl)
+<p align="center">
+  <img src="/screenshot.png" />
+</p>
+
+### [View Demo Page](http://codepen.io/vsync/pen/KGzdl)
 
 ## How to use:
-just give your carousel element a class "carousel". (the class name is configurable in the code obviously)
+
+```js
+var carouselElm = document.querySelector('.carousel')
+new HoverCarousel(carouselElm)     
+```
