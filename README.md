@@ -1,7 +1,7 @@
 Hover Carousel
 ========
 
-This super lightweight carousel-hover component which shows a nice scrollbar and side-fade indicators if more content is hidden "after" the side fold
+This super lightweight carousel-hover vanilla component which shows a nice scrollbar and side-fade indicators if more content is hidden "after" the side fold.
 
 <a href="http://codepen.io/vsync/pen/KGzdl" align="center">
   <img src="/screenshot.png" />
